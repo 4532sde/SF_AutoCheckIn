@@ -6,14 +6,14 @@ bj_dt = utc_dt.astimezone(timezone(timedelta(hours=8)))
 timestamp = bj_dt.timestamp()
 readingDate = datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d')
 
-
+#更新新版headers
 headers = {
     'Host': 'api.sfacg.com',
     'accept-charset': 'UTF-8',
     'authorization': 'Basic YW5kcm9pZHVzZXI6MWEjJDUxLXl0Njk7KkFjdkBxeHE=',
     'accept': 'application/vnd.sfacg.api+json;version=1',
-    'user-agent': 'boluobao/4.6.36(android;22)/OPPO',
-    'sfsecurity': f'nonce=EE94F4D4-CC0B-43B6-BFF2-6CB72CE8698B&timestamp={int(timestamp)}&devicetoken=F632BBEC-F075-39B5-A2C8-3234F5CBF99D&sign=7778A67648C9D95483E466D9D341FEA1',
+    'user-agent': 'boluobao/5.0.74(android;34)/XIAOMI/',
+    'sfsecurity': f'nonce=BAE73DF7-B862-47EB-AC40-019979268056&timestamp={int(timestamp)}&devicetoken=2F3B1D0B-05BC-3A6A-899F-01AF8F4BF5C9&sign=2378F7674E8CD0A5FDF058C7C455C9AD',
     'accept-encoding': 'gzip',
 }
 
